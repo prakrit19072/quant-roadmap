@@ -71,9 +71,3 @@
 
 ---
 
-## Practice Challenge
-**The Overcrowded Pirate Ship:**
-If there are **202 Pirates** but only **100 coins**, the Senior Pirate faces a math problem. He can only buy 100 votes. 
-
-* **Problem:** At what exact number of pirates does the Senior Pirate (the one proposing) **always** get thrown overboard regardless of the distribution? 
-* *Hint:* Think about what happens when $N > 200$. Who survives when there aren't enough coins to bribe the required 50% + 1?
