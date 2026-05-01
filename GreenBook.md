@@ -32,5 +32,51 @@ even tigers = sheep not eaten
 
 ### River Crossing
 
-AD , D Back, BC, 
+CD, D Back, AB, C Back, CD
+2, 1 , 10, 2 , 2 = 17 min
+
+### Birthday Problem
+
+From the first statement, we know that it cant be June or December
+From the Second statement, we know that it cant be March 5 or Sept 5
+From the 3rd statement, we know that it cant be march
+Hence, Sept 1
+
+### Card Game
+Wont it always be the same? 0$
+
+
+### Burning Ropes
+Light the first rope from both ends, and light the second rope from one end
+after the time first rope gets burnt, light the second end of the second rope also
+
+
+### Defective Ball
+9 identical in 2 tries with one heavier can be done by keeping 3-3 on the weighing scale
+if they are same, then we can pick any random 2 from the remaining 3-> if theyre equal = the third is scammy, if not the heavy is scammy
+
+if the 3-3 are not equal, we can take the 3 heavier ones and do the same as above in 1 try
+
+We will divide the 12 balls into 4 and 4 and 4, and compare the first 4 and the second 4s weight, if they are same, that means the 3rd 4 is bad
+
+from the 3rd 4, we will break it into 4 1s, and compare the first 2 1s. if they are same, then we will compare the 3rd one with the correct 1
+
+
+in case the first 2 4s are different, we will take one ball from the ligher pile and put into heavier pile, and 1 ball from the heavier pile and put into light pile
+
+1,2,3,4.     5,6,7,8.      9,10, 11 , 12
+
+1,2,5 one pile and 3,6,9 (9 coming from the correct one)
+
+now we will compare them. If they are same that means the remaning balls are culprit
+if the heavier one is heavier, that means the bad ball is from 1 or 2 (heavy) or 6 (light)
+
+if the heavier one becomes lighter, that means the balls that were moved (5,3) are culprit
+
+
+
+
+
+
+
 
