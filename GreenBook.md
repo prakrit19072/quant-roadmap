@@ -1,82 +1,79 @@
+# Green Book
+
 ## Problem 2.1: Problem Simplification
 
 ### Pirate Game
+<details>
+<summary><b>View Distribution Logic (2-5 Pirates)</b></summary>
 
-#### 2 Pirates
-In case of 2 pirates, the senior one will always take 100, and the junior will get nothing:
-> **(100, 0)**
+| Pirates | Distribution | Logic |
+| :--- | :--- | :--- |
+| **2** | `(100, 0)` | Senior takes all; Junior has no leverage. |
+| **3** | `(99, 0, 1)` | P3 gets 1 coin; better than the 0 they'd get with 2 pirates. |
+| **4** | `(99, 0, 1, 0)` | P3 was getting 0 earlier; 1 coin secures their vote. |
+| **5** | `(98, 0, 1, 0, 1)`| P3 and P5 are the cheapest votes to buy (both were at 0). |
 
-#### 3 Pirates
-In case of 3 pirates, if the senior gives the junior even 1 coin, he will be happy since otherwise he was getting nothing:
-> **(99, 0, 1)**
-
-#### 4 Pirates
-In case of 4 pirates, the 3rd one was earlier getting nothing, so if he gets one coin, and the seniormost takes 99, he will be happy:
-> **(99, 0, 1, 0)**
-
-#### 5 Pirates
-In case of 5 pirates, since pirate 3 and 5 are getting nothing if 4 pirates are there, they will be happy with 1-1 coin each:
-> **(98, 0, 1, 0, 1)**
-
+</details>
 
 ### Tiger and Sheep
+> [!TIP]
+> **The Intuition:** It is a recursive fear check. If eating the sheep turns you into a sheep for the next tiger, you stay hungry.
+* **Odd Tigers:** Sheep is eaten.
+* **Even Tigers:** Sheep survives.
 
-Another Dpesque problem. 1 tiger will eat the sheep since it will survive. 
-in case of 2 tigers, neither will eat since theyll be scared of getting eaten by the other....
-odd tigers = sheep eaten
-even tigers = sheep not eaten
-
-
+---
 
 ## Problem 2.2: Logical Reasoning
 
 ### River Crossing
-
-CD, D Back, AB, C Back, CD
-2, 1 , 10, 2 , 2 = 17 min
+**Goal:** 17 Minutes
+* **Step 1:** C and D cross (2m), D returns (1m) -> **3m**
+* **Step 2:** A and B cross (10m), C returns (2m) -> **12m**
+* **Step 3:** C and D cross (2m) -> **2m**
+* **Total:** $2 + 1 + 10 + 2 + 2 = 17$ min.
 
 ### Birthday Problem
+<details>
+<summary><b>Elimination Path</b></summary>
 
-From the first statement, we know that it cant be June or December
-From the Second statement, we know that it cant be March 5 or Sept 5
-From the 3rd statement, we know that it cant be march
-Hence, Sept 1
+1. **Statement 1:** Eliminates June/December (Day must be unique if the month was known).
+2. **Statement 2:** Eliminates March 5 and Sept 5.
+3. **Statement 3:** Eliminates March entirely.
+**Result:** **September 1**
+</details>
 
 ### Card Game
-Wont it always be the same? 0$
+> **Outcome:** $0.
+> **Intuition:** Since it is a closed system of red/black cards being swapped, the number of misplaced reds must exactly equal the number of misplaced blacks to keep the pile sizes constant.
 
+### Burning Ropes (45 Minutes)
+1. **Rope 1:** Light **both** ends. (Burn time: 30m)
+2. **Rope 2:** Light **one** end at the same time.
+3. **Action:** When Rope 1 vanishes (30m mark), light the **other** end of Rope 2.
+4. **Result:** The remaining 30m of Rope 2 burns in 15m. Total = 45m.
 
-### Burning Ropes
-Light the first rope from both ends, and light the second rope from one end
-after the time first rope gets burnt, light the second end of the second rope also
+### Defective Ball (12 Balls)
+<details>
+<summary><b>The 3-Weighting Strategy</b></summary>
 
+**Step 1:** Group into 4-4-4. Weigh `[1,2,3,4]` vs `[5,6,7,8]`.
+* **If Balanced:** Faulty is in `[9,10,11,12]`. Compare three "good" balls against three "suspect" balls.
+* **If Unbalanced:** Use the **Substitution Method**.
+  * Swap one heavy for one light, and replace one light with a known good ball.
+  * *Intuition:* If the scale tips the other way, the "swapped" balls contain the culprit. If it balances, the "removed" ball was the culprit.
+</details>
 
-### Defective Ball
-9 identical in 2 tries with one heavier can be done by keeping 3-3 on the weighing scale
-if they are same, then we can pick any random 2 from the remaining 3-> if theyre equal = the third is scammy, if not the heavy is scammy
+### Horse Race
+**The 7-Race Solution:**
+1. **Races 1-5:** Find the top 3 of each group.
+2. **Race 6:** Race the 5 winners. (Identifies the #1 overall Horse).
+3. **Race 7:** The "Final Sprint." Race the 2nd and 3rd from the Winner's group, the 1st and 2nd from the 2nd place group, and the 1st from the 3rd place group.
 
-if the 3-3 are not equal, we can take the 3 heavier ones and do the same as above in 1 try
+---
 
-We will divide the 12 balls into 4 and 4 and 4, and compare the first 4 and the second 4s weight, if they are same, that means the 3rd 4 is bad
+## Practice Challenge
+**The Overcrowded Pirate Ship:**
+If there are **202 Pirates** but only **100 coins**, the Senior Pirate faces a math problem. He can only buy 100 votes. 
 
-from the 3rd 4, we will break it into 4 1s, and compare the first 2 1s. if they are same, then we will compare the 3rd one with the correct 1
-
-
-in case the first 2 4s are different, we will take one ball from the ligher pile and put into heavier pile, and 1 ball from the heavier pile and put into light pile
-
-1,2,3,4.     5,6,7,8.      9,10, 11 , 12
-
-1,2,5 one pile and 3,6,9 (9 coming from the correct one)
-
-now we will compare them. If they are same that means the remaning balls are culprit
-if the heavier one is heavier, that means the bad ball is from 1 or 2 (heavy) or 6 (light)
-
-if the heavier one becomes lighter, that means the balls that were moved (5,3) are culprit
-
-
-
-
-
-
-
-
+* **Problem:** At what exact number of pirates does the Senior Pirate (the one proposing) **always** get thrown overboard regardless of the distribution? 
+* *Hint:* Think about what happens when $N > 200$. Who survives when there aren't enough coins to bribe the required 50% + 1?
