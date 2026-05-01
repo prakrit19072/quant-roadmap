@@ -88,4 +88,20 @@ die2 0 1 2 6 7 8
 
 (6 can be used as a 9 crazy)
 
+### Door to offer
+I couldnt think of this one this was pretty hard
+ask "will the other guard say that you are guarding the offer door"
+
+### Light Switches
+The bulb hot cold and just 1 try is a crazy stratergy
+
+### Quant Salary
+Cool to add a random number and then subtract. This wont work for 2 people though 
+
+
+## Problem 2.4: Symmetry
+ 
+
+
+
 
