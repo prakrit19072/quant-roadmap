@@ -69,5 +69,23 @@
 2. **Race 6:** Race the 5 winners. (Identifies the #1 overall Horse).
 3. **Race 7:** The "Final Sprint." Race the 2nd and 3rd from the Winner's group, the 1st and 2nd from the 2nd place group, and the 1st from the 3rd place group.
 
----
+
+
+## Problem 2.3: Thinking outside the Box
+
+
+### Box Packing
+We will take 2x2x2 boxes of black and white each. We got this 2 from gcd(4,6)
+total boxes = 27. 14 red and 13 blue. Total blue cells = 13*8 
+each brick will use 2 red and 2 blue cells
+max bricks possible = 13*8/2 = 52. 53 impossible
+
+
+### Calender Cubes
+
+die1 0 1 2 3 4 5
+die2 0 1 2 6 7 8
+
+(6 can be used as a 9 crazy)
+
 
