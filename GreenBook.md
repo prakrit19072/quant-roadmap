@@ -100,7 +100,104 @@ Cool to add a random number and then subtract. This wont work for 2 people thoug
 
 
 ## Problem 2.4: Symmetry
- 
+### Coin piles
+Choos 20 and flip them!
+
+### Mislabeled Bags
+1 fruit from the mixed bag. if it is apple, then the orange one has to be mixed, and the apple one is orange
+
+### Wise men
+so basically, we need that only 1 person should be the one who says the answer
+
+so, 49 others will flip the first time they see the glass straight, otherwise not.
+
+the last one will flip when he sees glass upside down
+
+after 49 flips of the last one, he can say that yes all others have come atleast once
+
+
+## Problem 2.5: Series Summation
+
+### Clock Pieces
+
+Sum of each piece = (12*13)/(2*3) = 26
+
+11,12,1,2 = could be one piece
+5,6,7,8  =  could be one piece
+3,4,9,10 = could be one piece (this is not continous but a piece)
+
+### Counterfeit coins I
+
+I first understood the problem that the scammy bag can have 11 AND 9 coins both, which would make this problem a bit more difficult
+
+So, I choose the stratergy to choose odd number of coins from each 
+
+1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+
+and then depending on the sum form a linear diophantine equation to calculate 9s and 11s
+
+### Glass Balls 
+Binary Search? == Not really too many drops there
+we want that all our cases should be the same, because if theyre not then the adversarial will always choose the worst case
+
+toh we will try our ball from a floor
+if it breaks then we will throw from 1 to floor-1
+
+if it works then we will go to 2*floor-1 and do the same
+
+we will fic the number of throws that we will make
+
+
+## Problem 2.6: PigeonHole
+
+### Handshakes
+
+26 people, and a person can do max 25 handshakes
+There must be 2 with same number
+
+### Have we met before?
+
+6 people
+all strangers = second true
+2 met each other = second true
+3 met each other and above = first true
+
+atleast 3 people met each other before
+or atleast 3 people were strangers before 
+
+all cases fixed!
+
+### Counterfeit coins II
+
+2x1 + 3x2 + 13x3 + 7x4 + 17x5 == thinking of something like this
+
+So I got the weighing part since we can easily solve a diophantine equation we would need just 1 weighing
+
+but now we also need the number of coins from each bag needed
+
+9,10,11
+
+9/10/11 bag 1
+
+9/10/11 bag 2
+
+we can convert to base 3
+
+3^0, 3^1, 3^2, 3^3, 3^4 as coefficients can be used
+
+This is because this will always lead to unique combinations, just like using base 10 and all that
+
+We are using a base-3 bitmask, hence the coefficients are 3^0, 3^1, 3^2 ,3^3 and 3^4
+
+think of it in this way, what is the max number we can reach with 1 coin = 2
+
+next coin sum we need = 3
+
+hence, the next multipler adder that we need from second coin = 3
+
+like this. max that can we make = 3*2 + 2 = 8
+
+next needed = 9. Next multiplier = 9
 
 
 
