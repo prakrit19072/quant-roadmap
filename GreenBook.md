@@ -233,7 +233,22 @@ I did this with a mathematical proof and arrived at a contradiction
 
 ## Problem 2.7: Math Induction
 
+### Coin split
 simple induction n(n-1)/2 ans
+
+### Chocolate bar
+Simple induction n*m-1
+
+### Race track one
+induction. combine the point having gas more than the distance to the next point with the enxt point, and it becomes an n problem !!!
+
+### Rainbow Hats
+
+The sum of colors of each prsioner % 7 has to be one of 0,1,2,3,4,5,6
+
+So, each prisoner will try to guess the sum between 0 to 6, atleast one of them will match. He will give the guess so that his guess + other numbers sum mod 7 becomes i
+
+koi na koi ek toh sahi hoga hi
 
 
 
