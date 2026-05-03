@@ -200,5 +200,40 @@ like this. max that can we make = 3*2 + 2 = 8
 next needed = 9. Next multiplier = 9
 
 
+## Problem 2.7: Modular Artithmatic
+
+
+### Prisoner Problem
+
+Red or blue hat
+hats assigned = cant communicate
+guess color of his hat
+
+55, 44 ===== (56, 44) or (55, 45) initially both possible
+
+red, blue === 1st     prisoner
+
+initially = both odd or both even
+
+
+
+odd, odd = odd even
+even , even = odd , evemn 
+
+odd red, even blue ===== maybe he says red
+
+
+
+Solution = he will announce odd number of hats color. The others who see the saeme odd one willl get to know their color as same as him, and those who dont will get to know thier color opposite of him
+
+
+### Chameleon colors
+
+I did this with a mathematical proof and arrived at a contradiction
+
+## Problem 2.7: Math Induction
+
+simple induction n(n-1)/2 ans
+
 
 
